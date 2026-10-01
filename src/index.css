@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Poppins', sans-serif;
+
+  --color-lilac: #9a8ad8;
+  --color-plum: #731985;
+  --color-plum-deep: #3d1054;
+  --color-gold: #cb9b25;
+}
+
+@keyframes img-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.header-img-strip {
+  animation: img-scroll 35s linear infinite;
+}
+
+.floor-grid {
+  background-color: #faf8ff;
+  background-image: radial-gradient(#9a8ad833 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+@layer base {
+  html {
+    @apply font-sans antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-white text-neutral-900;
+  }
+}
