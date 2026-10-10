@@ -12,24 +12,83 @@ export interface Table {
   featured?: boolean
 }
 
-// Posiciones transcritas del croquis del salón: la mesa 7 (novios) al centro,
-// el resto alrededor en sentido horario desde arriba: 2, 6, 1, 5, 4, 3.
+// Posiciones transcritas del croquis del salón: la mesa 1 (novios) al centro,
+// 7 y 2 arriba, 5 a la izquierda, 4 a la derecha, y 6 y 3 abajo.
 export const TABLES: Table[] = [
   {
     id: 1,
-    x: 84,
-    y: 64,
+    x: 45,
+    y: 51,
+    featured: true,
     guests: [
-      { name: 'Ramón Naranjo' },
-      { name: 'Zulay de Naranjo' },
-      { name: 'Alexandra Naranjo' },
-      { name: 'José Naranjo' },
-      { name: 'Dylan García' },
+      { name: 'Alejandra Giannattasio', role: 'Novia' },
+      { name: 'Alexanyer Naranjo', role: 'Novio' },
+      { name: 'Daniel Hernández' },
+      { name: 'Daniela Salcedo' },
+      { name: 'Chiquinquira Hernández' },
     ],
   },
   {
     id: 2,
     x: 47,
+    y: 25,
+    guests: [
+      { name: 'Ramón Naranjo' },
+      { name: 'Zulay de Naranjo' },
+      { name: 'Alexandra Naranjo' },
+      { name: 'José Antonio Naranjo' },
+      { name: 'Dylan García' },
+    ],
+  },
+  {
+    id: 3,
+    x: 85,
+    y: 83,
+    guests: [
+      { name: 'María Giannattasio' },
+      { name: 'Miguel Amato' },
+      { name: 'Fran' },
+      { name: 'Gisela' },
+    ],
+  },
+  {
+    id: 4,
+    x: 75,
+    y: 47,
+    guests: [
+      { name: 'Michel Naranjo' },
+      { name: 'Jackeline Marquez' },
+      { name: 'Nicole Naranjo' },
+      { name: 'Miranda Naranjo' },
+      { name: 'Daniel Naranjo' },
+    ],
+  },
+  {
+    id: 5,
+    x: 16,
+    y: 51,
+    guests: [
+      { name: 'Jesús Cordova' },
+      { name: 'Gabriela Otero' },
+      { name: 'Shaira Perez' },
+      { name: 'Francisco Dos Ramos' },
+    ],
+  },
+  {
+    id: 6,
+    x: 46,
+    y: 86,
+    guests: [
+      { name: 'Francisco Blanco' },
+      { name: 'Carolina Blanco' },
+      { name: 'Mileidy de Los Santos' },
+      { name: 'Jorge Jaramillo' },
+      { name: 'Tony Giannattasio' },
+    ],
+  },
+  {
+    id: 7,
+    x: 16,
     y: 14,
     guests: [
       { name: 'Yarima Contreras' },
@@ -37,68 +96,6 @@ export const TABLES: Table[] = [
       { name: 'Yemaire Delgado' },
       { name: 'Amalia Giannattasio' },
       { name: 'Adrianny Acosta' },
-    ],
-  },
-  {
-    id: 3,
-    x: 16,
-    y: 37,
-    guests: [
-      { name: 'Francisco Blanco' },
-      { name: 'Carolina Blanco' },
-      { name: 'Mileidy de Los Santos' },
-      { name: 'Tony Giannattasio' },
-      { name: 'Jorge Jaramillo' },
-    ],
-  },
-  {
-    id: 4,
-    x: 16,
-    y: 76,
-    guests: [
-      { name: 'Jesús Cordova' },
-      { name: 'Gabriela Otero' },
-      { name: 'Shaira Perez' },
-      { name: 'Francisco Dos Ramos' },
-      { name: 'Christopher Suarez' },
-    ],
-  },
-  {
-    id: 5,
-    x: 52,
-    y: 86,
-    guests: [
-      { name: 'Michel Naranjo' },
-      { name: 'Jackeline Marquez' },
-      { name: 'Nicole Naranjo' },
-      { name: 'Miranda Naranjo' },
-      { name: 'Miguel Amato' },
-      { name: 'María Giannattasio' },
-    ],
-  },
-  {
-    id: 6,
-    x: 84,
-    y: 24,
-    guests: [
-      { name: 'Antonieta Naranjo' },
-      { name: 'Carlos Villegas' },
-      { name: 'Carlos E. Villegas' },
-      { name: 'Dominic Villegas' },
-      { name: 'Daniel Naranjo' },
-    ],
-  },
-  {
-    id: 7,
-    x: 53,
-    y: 51,
-    featured: true,
-    guests: [
-      { name: 'Alexanyer Naranjo', role: 'Novio' },
-      { name: 'Alejandra Giannattasio', role: 'Novia' },
-      { name: 'Daniel Hernández' },
-      { name: 'Chiquinquira Hernández' },
-      { name: 'Daniela Salcedo' },
     ],
   },
 ]
